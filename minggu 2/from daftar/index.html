@@ -4,60 +4,83 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style.css">
     <title>Document</title>
+   <center><h1>PENDAFTARAN SISWA ARKADEMYAN </h1></center>
+    <style>
+    body{
+        margin: 30px;
+        padding:30px;
+        background-image: url('banned.jpg');
+        }
+    table{
+            width: 500px;
+            height: 500px;
+            padding:20px;
+            margin:30px;
+            background-color:rgb(228, 215, 39);
+            border: solid 3px rgb(17, 17, 17);
+            box-shadow: 5px 2px 2px 2px rgb(234, 243, 234);
+            border-radius: 20px;
+    }
+    h1{
+            text-align: center;
+            width: 700px;
+            height:50px;
+            background-color:rgb(243, 241, 250);
+            border: solid 3px yellow;
+            box-shadow: 2px 2px 2px 2px rgb(10, 10, 10);
+            border-radius: 20px;
+            margin: 10px auto;
+            padding: 0px auto;
+            color: rgb(36, 57, 248);
+        }   
+        .button{
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-    <div id="sembunyi">
-    <div class="kotak">
-        <center>
-        <h1>Daftar Nama-nama Siswa</h1>
-        <span>Menerima peserta murid baru</span>
-        </center> 
-            <div class="nl">
-            <input type="text" id="name" placeholder="Nama Lengkap"><br>
-            </div>
-            <div class="nh">
-                <label for="#">Nama murid tahun pelajaran 2019</label><br>
-                <select id="pilihan-hewan">
-                    <option>vicky kustaman</option>
-                    <option>andy riyansya</option>
-                    <option>M.syahputra</option>
-                    <option>Ridho islami</option>
-                </select>
-            </div>
-            
-            <div class="alamat">
-                <input type="text" id="alamat1" placeholder="Masukin Alamat Anda"><br>
-            </div>
-            
-            <div class="password">
-                <input type="password" id="katasandi" placeholder="Password"><br>
-            </div>
-            
-            <center>
-            <button type="submit" onclick="kliksaya()">Daftar</button>
-            </center>
-    </div>
-</div>
-<div id="hasil">
+      <center><table>
+    <div id="hilang"></div>
+    <form>
+    <tr>
+            <td><label for="nama-pengguna">Nama </label></td>
+            <td><input type="text" id="nama" placeholder="Masukan Nama anda"></td>
+    </tr>
+    
+    <tr>
+            <td><label for="email">Email</label></td>
+            <td><input type="email" id="email" placeholder="masukan email anda"></td>
+    </tr>
+    <tr>
+            <td><label for="kelas">Kelas</label></td>
+            <td><input type="text" id="kelas" placeholder="masukan kelas anda"></td>
+    </tr>
+    <tr>
+            <td><label for="Alamat">Alamat </label></td>
+            <td><input type="text" id="Alamat" placeholder="masukan alamat anda"></td>
+    </tr>
+    <tr>
+       <td><button onclick="validasi()">DAFTAR</button></td>
+    </tr>
+    <div id="hasil"></div>
+    </form>
+    </table>
 
-</div>       
     <script>
-        function kliksaya(){
-        var nama = document.getElementById("name").value;
-        var pilihan = document.getElementById("pilihan-hewan").value;
-        var alamat = document.getElementById("alamat1").value;
-        var password = document.getElementById("katasandi").value;
-
-        document.getElementById("hasil").innerHTML = "Selamat" + " " +nama+"Telah Menyalurkan Hewan Qurban" + pilihan+"dari alamat"+alamat;
-
-        var x = document.getElementById("sembunyi");
-        if(x.style.display === "none"){
-            x.style.display = "block";
-        }else{
-            x.style.display = "none";
-        }
+        function validasi() {
+        var nama = document.getElementById('nama').value;
+        var email = document.getElementById('email').value;
+        var kelas = document.getElementById('kelas').value;
+        var alamat = document.getElementById('alamat').value;
+         document.getElementById("hasil").innerHTML="Selamat"+""+name+""+kelas+""+kelas+""+"telah mendaftar,untuk informasi selanjutnya akan dikirimkan melalui"+""+email+""+"dan kartu peserta akan dikirimkan ke alamat"+""+alamat;
+         
+         var berubah=alamatdocument.getElementById("hilang");
+         if(berubah.style.display==="none"){
+             berubah.style.display ="block";
+         }else{
+             berubah.style.display="none";
+         }
         }
     </script>
 </body>
