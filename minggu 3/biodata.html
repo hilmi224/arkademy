@@ -11,7 +11,7 @@
 </head>
 <body>
 <form action="#" style="width: 1000px"class="posisi";>
-<fieldset class="h"/>
+<fieldset class="h">
 <table style="width: 980px;">
 <tr>
 <td rowspan="20" width="300px">
@@ -19,65 +19,91 @@
 </td>
 </tr>
 <tr>
-<td><b>Nama Lengkap</b></td>
-<td>:</td>
-<td>Hilmi</td>
+        <td>nama Lengkap</td>
+    <td id="namaLengkap"><b>Nama Lengkap</b></td>
 </tr>
 <tr>
-<td><b>Nama Panggilan</b></td>
-<td>:</td>
-<td>hilmi</td>
+    <td>nama Panggilan</td>
+<td id="namaPanggilan"><b>Nama Panggilan</b></td>
 </tr>
 <tr>
-<td><b>Tempat, Tanggal Lahir</b></td>
-<td>:</td>
-<td>Jakarta, 22 Agustus 2002</td>
+    <td>Tempat tanggal Lahir</td>
+<td id="tempatTanggalLahir"><b>Tempat, Tanggal Lahir</b></td>
 </tr>
 <tr>
-<td><b>Umur</b></td>
-<td>:</td>
-<td>16 Tahun</td>
+    <td>umur</td>
+<td id="umur"><b>Umur</b></td>
 </tr>
 <tr>
-<td><b>Jenis Kelamin</b></td>
-<td>:</td>
-<td>Laki - Laki</td>
+    <td>Jenis Kelamin</td>
+<td id="jenisKelamin"><b>Jenis Kelamin</b></td>
 </tr>
 <tr>
-<td><b>Gol. Darah</b></td>
-<td>:</td>
-<td>A</td>
+    <td>Gol Darah</td>
+<td id="golDarah"><b>Gol Darah</b></td>
 </tr>
 <tr>
-<td><b>Agama</b></td>
-<td>:</td>
-<td>Islam</td>
+    <td>Agama</td>
+<td id="agama"><b>Agama</b></td>
 </tr>
 <tr>
-<td><b>Alamat</b></td>
-<td>:</td>
-<td>Jln. Kebon Pala 2 no :34, Tanah Abang</td>
+    <td id="alamat"><b>Alamat</b></td>
+    <td>Alamat</td>
 </tr>
 <tr>
-<td><b>Status</b></td>
-<td>:</td>
-<td>Pelajar</td>
+    <td>status</td>
+    <td id="status"><b>Status</b></td>
 </tr>
 <tr>
-<td><b>Kewarganegaraan</b></td>
-<td>:</td>
-<td>Indonesia</td>
+    <td>kewarganegaraan</td>
+<td id="kewarganegaraan"><b>Kewarganegaraan</b></td>
 </tr>
 <tr>
-<td><b>Riwayat</b></td>
-<td>:</td>
-<td colspan="1" align="left">
-Ingin Tahu Riwayatku ? <a href="Detail.html"style="text-decoration: none;" target="_parent"><input
-type="button"value="Cari tahu ? "/></a>
+    <td>riwayat</td>
+<td id="riwayat"><b>Riwayat</b></td>
 </td>
 </tr>
 </table>
 </fieldset>
+<script>
+    let data ={
+        namaLengkap :"Hilmi",
+        namaPanggilan :"Hilmi",
+        TempatTanggalLahir :"jakarta 22 agustus 2002",
+        umur:"16",
+        jenisKelamin :"Laki-Laki",
+        golDarah :"A",
+        agama :"Islam",
+        alamat :"jl.Kebonpala II",
+        status :"Pelajar",
+        kewarganegaraan :"Indonesia",
+        riwayat :"hidup Abadi"
+    }
+
+    let namaLengkap = document.getElementById('namaLengkap')
+    let namaPanggilan = document.getElementById('namaPanggilan')
+    let tempatTanggalLahir = document.getElementById('tempatTanggalLahir')
+    let umur = document.getElementById('umur')
+    let jenisKelamin = document.getElementById('jenisKelamin')
+    let golDarah = document.getElementById('golDarah')
+    let Agama = document.getElementById('agama')
+    let status = document.getElementById('status')
+    let Kewarganegaraan = document.getElementById('kewarganegaraan')
+    let Riwayat = document.getElementById('riwayat')
+
+
+        namaLengkap.innerHTML = data.namaLengkap
+        namaPanggilan.innerHTML = data.namaPanggilan
+        tempatTanggalLahir.innerHTML = data.tempatTanggalLahir
+        umur.innerHTML = data.umur
+        jenisKelamin.innerHTML = data.jenisKelamin
+        golDarah.innerHTML = data.golDarah
+        agama.innerHTML = data.agama
+        alamat.innerHTML = data.alamat
+        status.innerHTML = data.status
+        kewarganegaraan.innerHTML = data.kewarganegaraan
+        riwayat.innerHTML = data.riwayat
+</script>
 </form>
 </body>
 </html>
