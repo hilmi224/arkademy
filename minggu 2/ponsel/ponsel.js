@@ -1,70 +1,70 @@
 const ponsel = [
     {
-        "nama":"Vivo",
-        "gambar":"-",
+        "nama":"Vivo V15",
+        "gambar":"assets/img/1.jpg",
         "harga":"2,999",
         "ram":"3GB",
         "storage":""
     },
     {
-        "nama":"Samsung",
-        "gambar":"-",
+        "nama":"Samsung Galaxy A20",
+        "gambar":"assets/img/2.jpg",
         "harga":"2,500",
         "ram":"3GB",
         "storage":""
     },
     {
-        "nama":"Oppo",
-        "gambar":"-",
+        "nama":"Oppo A7",
+        "gambar":"assets/img/3.jpg",
         "harga":"2,000",
         "ram":"3GB",
         "storage":""
     },
     {
-        "nama":"Oppo",
-        "gambar":"-",
+        "nama":"xiaomi Note 7 Pro",
+        "gambar":"assets/img/4.jpg",
         "harga":"2,000",
         "ram":"3GB",
         "storage":""
     },
     {
-        "nama":"Oppo",
-        "gambar":"-",
+        "nama":"Realme C2",
+        "gambar":"assets/img/5.jpg",
         "harga":"2,000",
         "ram":"3GB",
         "storage":""
     },
     {
-        "nama":"Oppo",
-        "gambar":"-",
+        "nama":"Oppo F9",
+        "gambar":"assets/img/6.jpg",
         "harga":"2,000",
         "ram":"3GB",
         "storage":""
     },
     {
-        "nama":"Oppo",
-        "gambar":"-",
+        "nama":"Honor",
+        "gambar":"assets/img/10.jpg",
         "harga":"2,000",
         "ram":"3GB",
         "storage":""
     },
     {
-        "nama":"Oppo",
-        "gambar":"-",
+        "nama":"iphone X",
+        "gambar":"assets/img/8.jpg",
         "harga":"2,000",
         "ram":"3GB",
         "storage":""
     },
     {
-        "nama":"Oppo",
-        "gambar":"-",
+        "nama":"Savelli Jardin-Secret White Ice",
+        "gambar":"assets/img/7.jpg",
         "harga":"2,000",
         "ram":"3GB",
         "storage":""
     },
     {
-        "nama":"Oppo",
-        "gambar":"-",
+        "nama":"BlackBerry Porsche Design P9981",
+        "gambar":"assets/img/9.jpg",
         "harga":"2,000",
         "ram":"3GB",
         "storage":""

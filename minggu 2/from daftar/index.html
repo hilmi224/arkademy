@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="sembunyi">
+    <div class="kotak">
+        <center>
+        <h1>Daftar Nama-nama Siswa</h1>
+        <span>Menerima peserta murid baru</span>
+        </center> 
+            <div class="nl">
+            <input type="text" id="name" placeholder="Nama Lengkap"><br>
+            </div>
+            <div class="nh">
+                <label for="#">Nama murid tahun pelajaran 2019</label><br>
+                <select id="pilihan-hewan">
+                    <option>vicky kustaman</option>
+                    <option>andy riyansya</option>
+                    <option>M.syahputra</option>
+                    <option>Ridho islami</option>
+                </select>
+            </div>
+            
+            <div class="alamat">
+                <input type="text" id="alamat1" placeholder="Masukin Alamat Anda"><br>
+            </div>
+            
+            <div class="password">
+                <input type="password" id="katasandi" placeholder="Password"><br>
+            </div>
+            
+            <center>
+            <button type="submit" onclick="kliksaya()">Daftar</button>
+            </center>
+    </div>
+</div>
+<div id="hasil">
+
+</div>       
+    <script>
+        function kliksaya(){
+        var nama = document.getElementById("name").value;
+        var pilihan = document.getElementById("pilihan-hewan").value;
+        var alamat = document.getElementById("alamat1").value;
+        var password = document.getElementById("katasandi").value;
+
+        document.getElementById("hasil").innerHTML = "Selamat" + " " +nama+"Telah Menyalurkan Hewan Qurban" + pilihan+"dari alamat"+alamat;
+
+        var x = document.getElementById("sembunyi");
+        if(x.style.display === "none"){
+            x.style.display = "block";
+        }else{
+            x.style.display = "none";
+        }
+        }
+    </script>
+</body>
+</html>

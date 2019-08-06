@@ -1,0 +1,32 @@
+body {
+    background: rgb(245, 13, 13);
+}
+.kotak {
+    width: 500px;
+    height: 400px;
+    margin: auto;
+    border: 2px solid black;
+    border-radius: 5px;
+    background: white;
+}
+.alamat {
+    
+    padding: 19px 8px 9px 8px;
+}
+.nl {
+        padding: 20px 7px 9px 8px;
+}
+.nh {
+       padding: 15px 10px 7px 8px;
+}
+.password {
+
+    padding: 9px 0px 7px 8px;
+}
+button {
+    color: #ffffff;
+    font: 20px;
+    background: rgb(28, 240, 39);
+    padding: 10px 20px;
+    width: 200px;
+}
