@@ -1,109 +1,111 @@
-
 <!DOCTYPE html>
 <html>
+
 <head>
-<meta name="description" content="Biodata"/>
-<meta name="Keywords" content="Biodata"/>
-<meta name="authors" content="Angga"/>
-<meta charset="UTF-8"/>
-<title>Biodata</title>
-<link rel="stylesheet" href="biodata.css"/>
+    <meta name="description" content="Biodata" />
+    <meta name="Keywords" content="Biodata" />
+    <meta name="authors" content="Angga" />
+    <meta charset="UTF-8" />
+    <title>Biodata</title>
+    <link rel="stylesheet" href="biodata.css" />
 </head>
+
 <body>
-<form action="#" style="width: 1000px"class="posisi";>
-<fieldset class="h">
-<table style="width: 980px;">
-<tr>
-<td rowspan="20" width="300px">
-<img src="hilmii.jpg" width="250px" height="420px"/>
-</td>
-</tr>
-<tr>
-        <td>nama Lengkap</td>
-    <td id="namaLengkap"><b>Nama Lengkap</b></td>
-</tr>
-<tr>
-    <td>nama Panggilan</td>
-<td id="namaPanggilan"><b>Nama Panggilan</b></td>
-</tr>
-<tr>
-    <td>Tempat tanggal Lahir</td>
-<td id="tempatTanggalLahir"><b>Tempat, Tanggal Lahir</b></td>
-</tr>
-<tr>
-    <td>umur</td>
-<td id="umur"><b>Umur</b></td>
-</tr>
-<tr>
-    <td>Jenis Kelamin</td>
-<td id="jenisKelamin"><b>Jenis Kelamin</b></td>
-</tr>
-<tr>
-    <td>Gol Darah</td>
-<td id="golDarah"><b>Gol Darah</b></td>
-</tr>
-<tr>
-    <td>Agama</td>
-<td id="agama"><b>Agama</b></td>
-</tr>
-<tr>
-    <td id="alamat"><b>Alamat</b></td>
-    <td>Alamat</td>
-</tr>
-<tr>
-    <td>status</td>
-    <td id="status"><b>Status</b></td>
-</tr>
-<tr>
-    <td>kewarganegaraan</td>
-<td id="kewarganegaraan"><b>Kewarganegaraan</b></td>
-</tr>
-<tr>
-    <td>riwayat</td>
-<td id="riwayat"><b>Riwayat</b></td>
-</td>
-</tr>
-</table>
-</fieldset>
-<script>
-    let data ={
-        namaLengkap :"Hilmi",
-        namaPanggilan :"Hilmi",
-        tempatTanggalLahir :"jakarta 22 agustus 2002",
-        umur:"16",
-        jenisKelamin :"Laki-Laki",
-        golDarah :"A",
-        agama :"Islam",
-        alamat :"jl.Kebonpala II",
-        status :"Pelajar",
-        kewarganegaraan :"Indonesia",
-        riwayat :"hidup Abadi"
-    }
+    <form action="#" style="width: 1000px" class="posisi" ;>
+        <fieldset class="h">
+            <table style="width: 980px;">
+                <tr>
+                    <td rowspan="20" width="300px">
+                        <img src="hilmii.jpg" width="250px" height="420px" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>nama Lengkap</td>
+                    <td id="namaLengkap"><b>Nama Lengkap</b></td>
+                </tr>
+                <tr>
+                    <td>nama Panggilan</td>
+                    <td id="namaPanggilan"><b>Nama Panggilan</b></td>
+                </tr>
+                <tr>
+                    <td>Tempat tanggal Lahir</td>
+                    <td id="tempatTanggalLahir"><b>Tempat, Tanggal Lahir</b></td>
+                </tr>
+                <tr>
+                    <td>umur</td>
+                    <td id="umur"><b>Umur</b></td>
+                </tr>
+                <tr>
+                    <td>Jenis Kelamin</td>
+                    <td id="jenisKelamin"><b>Jenis Kelamin</b></td>
+                </tr>
+                <tr>
+                    <td>Gol Darah</td>
+                    <td id="golDarah"><b>Gol Darah</b></td>
+                </tr>
+                <tr>
+                    <td>Agama</td>
+                    <td id="agama"><b>Agama</b></td>
+                </tr>
+                <tr>
+                    <td id="alamat"><b>Alamat</b></td>
+                    <td>Alamat</td>
+                </tr>
+                <tr>
+                    <td>status</td>
+                    <td id="status"><b>Status</b></td>
+                </tr>
+                <tr>
+                    <td>kewarganegaraan</td>
+                    <td id="kewarganegaraan"><b>Kewarganegaraan</b></td>
+                </tr>
+                <tr>
+                    <td>riwayat</td>
+                    <td id="riwayat"><b>Riwayat</b></td>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        <script>
+            let data = {
+                namaLengkap: "Hilmi",
+                namaPanggilan: "Hilmi",
+                tempatTanggalLahir: "jakarta 22 agustus 2002",
+                umur: "16",
+                jenisKelamin: "Laki-Laki",
+                golDarah: "A",
+                agama: "Islam",
+                alamat: "jl.Kebonpala II",
+                status: "Pelajar",
+                kewarganegaraan: "Indonesia",
+                riwayat: "hidup Abadi"
+            }
 
-    let namaLengkap = document.getElementById('namaLengkap')
-    let namaPanggilan = document.getElementById('namaPanggilan')
-    let tempatTanggalLahir = document.getElementById('tempatTanggalLahir')
-    let umur = document.getElementById('umur')
-    let jenisKelamin = document.getElementById('jenisKelamin')
-    let golDarah = document.getElementById('golDarah')
-    let Agama = document.getElementById('agama')
-    let status = document.getElementById('status')
-    let Kewarganegaraan = document.getElementById('kewarganegaraan')
-    let Riwayat = document.getElementById('riwayat')
+            let namaLengkap = document.getElementById('namaLengkap')
+            let namaPanggilan = document.getElementById('namaPanggilan')
+            let tempatTanggalLahir = document.getElementById('tempatTanggalLahir')
+            let umur = document.getElementById('umur')
+            let jenisKelamin = document.getElementById('jenisKelamin')
+            let golDarah = document.getElementById('golDarah')
+            let Agama = document.getElementById('agama')
+            let status = document.getElementById('status')
+            let Kewarganegaraan = document.getElementById('kewarganegaraan')
+            let Riwayat = document.getElementById('riwayat')
 
 
-        namaLengkap.innerHTML = data.namaLengkap
-        namaPanggilan.innerHTML = data.namaPanggilan
-        tempatTanggalLahir.innerHTML = data.tempatTanggalLahir
-        umur.innerHTML = data.umur
-        jenisKelamin.innerHTML = data.jenisKelamin
-        golDarah.innerHTML = data.golDarah
-        agama.innerHTML = data.agama
-        alamat.innerHTML = data.alamat
-        status.innerHTML = data.status
-        kewarganegaraan.innerHTML = data.kewarganegaraan
-        riwayat.innerHTML = data.riwayat
-</script>
-</form>
+            namaLengkap.innerHTML = data.namaLengkap
+            namaPanggilan.innerHTML = data.namaPanggilan
+            tempatTanggalLahir.innerHTML = data.tempatTanggalLahir
+            umur.innerHTML = data.umur
+            jenisKelamin.innerHTML = data.jenisKelamin
+            golDarah.innerHTML = data.golDarah
+            agama.innerHTML = data.agama
+            alamat.innerHTML = data.alamat
+            status.innerHTML = data.status
+            kewarganegaraan.innerHTML = data.kewarganegaraan
+            riwayat.innerHTML = data.riwayat
+        </script>
+    </form>
 </body>
+
 </html>

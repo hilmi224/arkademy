@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,27 +8,29 @@
     <title>Rest API Consumtion</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div id="display">
 
     </div>
     <script>
-       fetch('https://rickandmortyapi.com/api/character')
-       .then((response)=>{
+        fetch('https://rickandmortyapi.com/api/character')
+            .then((response) => {
 
-        const retrieve = async()=>{
-        const data = await response.json()
-        const {results} = data
-        for(let x in results){
-            document.getElementById('display').innerHTML+='\
-            <div>'+results[x].name+'</div>\
+                const retrieve = async () => {
+                    const data = await response.json()
+                    const { results } = data
+                    for (let x in results) {
+                        document.getElementById('display').innerHTML += '\
+            <div>'+ results[x].name + '</div>\
             <div>\
-            <image src="'+results[x].image+'">\
+            <image src="'+ results[x].image + '">\
             </div>'
-         }
-        }
-        retrieve()
-       })
+                    }
+                }
+                retrieve()
+            })
     </script>
 </body>
+
 </html>

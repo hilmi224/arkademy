@@ -1,48 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>tokoh online Baju Distro</title>
     <style>
-    body{
-        background-image: url('border.jpeg');
-        background-repeat: no-repeat;
-        background-size: 3000px auto;
-    }
+        body {
+            background-image: url('border.jpeg');
+            background-repeat: no-repeat;
+            background-size: 3000px auto;
+        }
 
-        #item-list{
+        #item-list {
             display: flex;
             flex-wrap: wrap;
         }
-        h1{
+
+        h1 {
             background-color: hotpink;
             border-radius: 20px;
             animation-name: gantiwarna;
             animation-duration: 3s;
-            animation-iteration-count: infinite;    
+            animation-iteration-count: infinite;
         }
 
-        @keyframes gantiwarna{
-            0% {background-color: red; left:0px; top:0px; }
-            25% {background-color: blue; left:200px; top:0px; }
-            50% {background-color: rgb(231, 16, 167); left:200px; top:8px; }
-            75% {background-color: orange; left:8px; top:200px; }
-            100% {background-color: yellow; left:8px; top:0px; }
+        @keyframes gantiwarna {
+            0% {
+                background-color: red;
+                left: 0px;
+                top: 0px;
+            }
+
+            25% {
+                background-color: blue;
+                left: 200px;
+                top: 0px;
+            }
+
+            50% {
+                background-color: rgb(231, 16, 167);
+                left: 200px;
+                top: 8px;
+            }
+
+            75% {
+                background-color: orange;
+                left: 8px;
+                top: 200px;
+            }
+
+            100% {
+                background-color: yellow;
+                left: 8px;
+                top: 0px;
+            }
         }
-        .item{
+
+        .item {
             flex: 1;
             margin: 10px;
             border-radius: 10px;
-            border-style: solid ;
+            border-style: solid;
             text-align: center;
-            background-color: aqua ;
+            background-color: aqua;
         }
-        .item:hover{
-             background-color: tomato;
+
+        .item:hover {
+            background-color: tomato;
         }
-        .item .gambar img{
+
+        .item .gambar img {
             border-style: solid;
             border-radius: 15px;
             width: 150px;
@@ -50,250 +79,262 @@
             height: 200px;
             transition: width 2s, height 2s;
         }
-       form {
-         width:1190px;
-         margin:20px auto;
-         text-align: right;
-}
-.search {
-    padding:8px 15px;
-    background:rgba(39, 1, 255, 0.2);
-    border:0px solid #e008aa;
-}
-.button {
-    position:relative;
-    padding:6px 15px;
-    left:-8px;
-    border:2px solid #ff0606;
-    background-color:#0f13e0;
-    color:#fafafa;
-}
-.button:hover  {
-    background-color:#c2e917;
-    color:#207cca;
-}
-h3{
-    color:white;
-    background-color: black;
-}
 
+        form {
+            width: 1190px;
+            margin: 20px auto;
+            text-align: right;
+        }
+
+        .search {
+            padding: 8px 15px;
+            background: rgba(39, 1, 255, 0.2);
+            border: 0px solid #e008aa;
+        }
+
+        .button {
+            position: relative;
+            padding: 6px 15px;
+            left: -8px;
+            border: 2px solid #ff0606;
+            background-color: #0f13e0;
+            color: #fafafa;
+        }
+
+        .button:hover {
+            background-color: #c2e917;
+            color: #207cca;
+        }
+
+        h3 {
+            color: white;
+            background-color: black;
+        }
     </style>
 </head>
+
 <body>
-    <center><h1 class="distro">TOKO ONLINE BAJU DISTRO</h1></center>
+    <center>
+        <h1 class="distro">TOKO ONLINE BAJU DISTRO</h1>
+    </center>
     <img src="zilinggo.png" alt="" height="100px" width="200px">
-        <form>
-         <input class="search" type="text" placeholder="Cari..." required>	
-         <input class="button" type="button" value="Cari">		
-        </form>
+    <form>
+        <input class="search" type="text" placeholder="Cari..." required>
+        <input class="button" type="button" value="Cari">
+    </form>
     <div id="item-list"></div>
-    <h3><center>Kamu Telah Mencapai Batas Akhir</center></h3>
-    <h3><center>Lakukan Pencarian untuk Mengetahui Lebih Banyak!</center></h3>
+    <h3>
+        <center>Kamu Telah Mencapai Batas Akhir</center>
+    </h3>
+    <h3>
+        <center>Lakukan Pencarian untuk Mengetahui Lebih Banyak!</center>
+    </h3>
     <script>
         let item = [
-    {
-        "nama":"T-SHIRT CROOZ",
-        "gambar":"assets/img/crooz.jpg",
-        "ukuran":"L",
-        "warna":"Blue",
-        "harga":"Rp.120.000.00</h1>"
-           
-    },
-    
-    {
-        "nama":"T-SHIRT 420",
-        "gambar":"assets/img/420.jpeg",
-        "ukuran":"M",
-        "warna":"Gray",
-        "harga":"Rp.150.000.00"
-           
-    },
+            {
+                "nama": "T-SHIRT CROOZ",
+                "gambar": "assets/img/crooz.jpg",
+                "ukuran": "L",
+                "warna": "Blue",
+                "harga": "Rp.120.000.00</h1>"
 
-    {
-        "nama":"T-SHIRT BELANG-BELANG",
-        "gambar":"assets/img/belang.jpeg",
-        "ukuran":"XXl",
-        "warna":"Hitam,Putih",
-        "harga":"Rp.90.000.00"
-           
-    },
+            },
 
-    {
-        "nama":"T-SHIRT EFG",
-        "gambar":"assets/img/efg.jpg",
-        "ukuran":"S",
-        "warna":"Black",
-        "harga":"Rp.135.000.00"
-           
-    },
+            {
+                "nama": "T-SHIRT 420",
+                "gambar": "assets/img/420.jpeg",
+                "ukuran": "M",
+                "warna": "Gray",
+                "harga": "Rp.150.000.00"
 
-    {
-        "nama":"T-SHIRTT-SHIRT SKYMO",
-        "gambar":"assets/img/skymo.jpeg",
-        "ukuran":"L",
-        "warna":"Yellow",
-        "harga":"Rp.125.000.00"
-           
-    },
+            },
 
-    {
-        "nama":"T-SHIRT TOXIC",
-        "gambar":"assets/img/toxic.jpg",
-        "ukuran":"M",
-        "warna":"White",
-        "harga":"Rp.120.000.00"
-           
-    },
+            {
+                "nama": "T-SHIRT BELANG-BELANG",
+                "gambar": "assets/img/belang.jpeg",
+                "ukuran": "XXl",
+                "warna": "Hitam,Putih",
+                "harga": "Rp.90.000.00"
 
-    {
-        "nama":"T-SHIRT WDZG",
-        "gambar":"assets/img/wdzg.jpg",
-        "ukuran":"M",
-        "warna":"Red",
-        "harga":"Rp.120.000.00"
-           
-    },
+            },
 
-    {
-        "nama":"T-SHIRT PROBLEM",
-        "gambar":"assets/img/problem.jpeg",
-        "ukuran":"L",
-        "warna":"Navy",
-        "harga":"Rp.130.000.00"
-           
-    },
+            {
+                "nama": "T-SHIRT EFG",
+                "gambar": "assets/img/efg.jpg",
+                "ukuran": "S",
+                "warna": "Black",
+                "harga": "Rp.135.000.00"
 
-    {
-        "nama":"TSHIRT NOIN",
-        "gambar":"assets/img/noin.jpeg",
-        "ukuran":"L",
-        "warna":"Black",
-        "harga":"Rp.145.000.00"
-           
-    },
+            },
 
-    {
-        "nama":"T-SHIRT SBCO",
-        "gambar":"assets/img/sbco.jpg",
-        "ukuran":"XL",
-        "warna":"Black",
-        "harga":"Rp.115.000.00"
-           
-    },
+            {
+                "nama": "T-SHIRTT-SHIRT SKYMO",
+                "gambar": "assets/img/skymo.jpeg",
+                "ukuran": "L",
+                "warna": "Yellow",
+                "harga": "Rp.125.000.00"
 
-    {
-        "nama":"T-SHIRT SCH",
-        "gambar":"assets/img/sch.jpg",
-        "ukuran":"XXL",
-        "warna":"White",
-        "harga":"Rp.140.000.00"
-           
-    },
+            },
 
-    {
-        "nama":"T-SHIRT MDFK",
-        "gambar":"assets/img/mdfk.jpeg",
-        "ukuran":"M",
-        "warna":"Black",
-        "harga":"Rp.125.000.00"
-           
-    },
+            {
+                "nama": "T-SHIRT TOXIC",
+                "gambar": "assets/img/toxic.jpg",
+                "ukuran": "M",
+                "warna": "White",
+                "harga": "Rp.120.000.00"
 
-    {
-        "nama":"T-SHIRT CONVERSE",
-        "gambar":"assets/img/converse.jpg",
-        "ukuran":"M",
-        "warna":"White",
-        "harga":"Rp.250.000.00"
-           
-    },
+            },
 
-    {
-        "nama":"T-SHIRT UNIQLO",
-        "gambar":"assets/img/uniqlo.jpg",
-        "ukuran":"L",
-        "warna":"Black",
-        "harga":"Rp.1.200.000.00"
-           
-    },
+            {
+                "nama": "T-SHIRT WDZG",
+                "gambar": "assets/img/wdzg.jpg",
+                "ukuran": "M",
+                "warna": "Red",
+                "harga": "Rp.120.000.00"
 
-    {
-        "nama":"T-SHIRT HUFT",
-        "gambar":"assets/img/huft.jpg",
-        "ukuran":"L",
-        "warna":"Pink",
-        "harga":"Rp.175.000.00"
-           
-    },
+            },
 
-    {
-        "nama":"T-SHIRT MELLIFLUOS",
-        "gambar":"assets/img/mlfs.jpg",
-        "ukuran":"M",
-        "warna":"Black",
-        "harga":"Rp.125.000.00"
-           
-    },
+            {
+                "nama": "T-SHIRT PROBLEM",
+                "gambar": "assets/img/problem.jpeg",
+                "ukuran": "L",
+                "warna": "Navy",
+                "harga": "Rp.130.000.00"
 
-    {
-        "nama":"JACKET LEVIS FULL WHITE",
-        "gambar":"assets/img/jacket.jpg",
-        "ukuran":"L",
-        "warna":"white",
-        "harga":"Rp300.000.00"
-           
-    },
+            },
 
-    {
-        "nama":"T-SHIRT QUEEN BEER",
-        "gambar":"assets/img/qb.jpg",
-        "ukuran":"M",
-        "warna":"Gray",
-        "harga":"Rp.200.000.00"
-           
-    },
+            {
+                "nama": "TSHIRT NOIN",
+                "gambar": "assets/img/noin.jpeg",
+                "ukuran": "L",
+                "warna": "Black",
+                "harga": "Rp.145.000.00"
 
-    {
-        "nama":"T-SHIRT SMITTY",
-        "gambar":"assets/img/smitty.jpg",
-        "ukuran":"XL",
-        "warna":"White",
-        "harga":"Rp.230.000.00"
-           
-    },
+            },
 
-    {
-        "nama":"T-SHIRT MULES",
-        "gambar":"assets/img/muless.jpg",
-        "ukuran":"M",
-        "warna":"Red",
-        "harga":"Rp.110.000.00"
-           
-    },
- 
-];
-for(x in item){
-    let namaItem =item[x].nama;
-    let gambarItem =item[x].gambar;
-    let ukuranItem =item[x].ukuran;
-    let warnaItem =item[x].warna;
-    let hargaItem =item[x].harga;
+            {
+                "nama": "T-SHIRT SBCO",
+                "gambar": "assets/img/sbco.jpg",
+                "ukuran": "XL",
+                "warna": "Black",
+                "harga": "Rp.115.000.00"
 
-    document.getElementById('item-list').innerHTML+="\
+            },
+
+            {
+                "nama": "T-SHIRT SCH",
+                "gambar": "assets/img/sch.jpg",
+                "ukuran": "XXL",
+                "warna": "White",
+                "harga": "Rp.140.000.00"
+
+            },
+
+            {
+                "nama": "T-SHIRT MDFK",
+                "gambar": "assets/img/mdfk.jpeg",
+                "ukuran": "M",
+                "warna": "Black",
+                "harga": "Rp.125.000.00"
+
+            },
+
+            {
+                "nama": "T-SHIRT CONVERSE",
+                "gambar": "assets/img/converse.jpg",
+                "ukuran": "M",
+                "warna": "White",
+                "harga": "Rp.250.000.00"
+
+            },
+
+            {
+                "nama": "T-SHIRT UNIQLO",
+                "gambar": "assets/img/uniqlo.jpg",
+                "ukuran": "L",
+                "warna": "Black",
+                "harga": "Rp.1.200.000.00"
+
+            },
+
+            {
+                "nama": "T-SHIRT HUFT",
+                "gambar": "assets/img/huft.jpg",
+                "ukuran": "L",
+                "warna": "Pink",
+                "harga": "Rp.175.000.00"
+
+            },
+
+            {
+                "nama": "T-SHIRT MELLIFLUOS",
+                "gambar": "assets/img/mlfs.jpg",
+                "ukuran": "M",
+                "warna": "Black",
+                "harga": "Rp.125.000.00"
+
+            },
+
+            {
+                "nama": "JACKET LEVIS FULL WHITE",
+                "gambar": "assets/img/jacket.jpg",
+                "ukuran": "L",
+                "warna": "white",
+                "harga": "Rp300.000.00"
+
+            },
+
+            {
+                "nama": "T-SHIRT QUEEN BEER",
+                "gambar": "assets/img/qb.jpg",
+                "ukuran": "M",
+                "warna": "Gray",
+                "harga": "Rp.200.000.00"
+
+            },
+
+            {
+                "nama": "T-SHIRT SMITTY",
+                "gambar": "assets/img/smitty.jpg",
+                "ukuran": "XL",
+                "warna": "White",
+                "harga": "Rp.230.000.00"
+
+            },
+
+            {
+                "nama": "T-SHIRT MULES",
+                "gambar": "assets/img/muless.jpg",
+                "ukuran": "M",
+                "warna": "Red",
+                "harga": "Rp.110.000.00"
+
+            },
+
+        ];
+        for (x in item) {
+            let namaItem = item[x].nama;
+            let gambarItem = item[x].gambar;
+            let ukuranItem = item[x].ukuran;
+            let warnaItem = item[x].warna;
+            let hargaItem = item[x].harga;
+
+            document.getElementById('item-list').innerHTML += "\
     <div class='item'>\
-    <div class='gambar'><img src='"+gambarItem+"' alt=''/></div>\
-    <div class='nama'>"+namaItem+"</div>\
-    <div class='ukuran'>"+ukuranItem+"</div>\
-    <div class='warna'>"+warnaItem+"</div>\
-    <div class='harga'>"+hargaItem+"</div>\
+    <div class='gambar'><img src='"+ gambarItem + "' alt=''/></div>\
+    <div class='nama'>"+ namaItem + "</div>\
+    <div class='ukuran'>"+ ukuranItem + "</div>\
+    <div class='warna'>"+ warnaItem + "</div>\
+    <div class='harga'>"+ hargaItem + "</div>\
     </div>\
     ";
-    if(((x+1)/5)===0){
-        document.getElementById('item-list').innerHTML+="\
+            if (((x + 1) / 5) === 0) {
+                document.getElementById('item-list').innerHTML += "\
         <div class='pemisah'></div>\
         ";
-    }
-}
+            }
+        }
     </script>
 </body>
+
 </html>

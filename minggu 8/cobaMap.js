@@ -7,11 +7,11 @@ const data = [
 ];
 
 const data2 = [
-    {id: 1, name: 'data1'},
-    {id: 2, name: 'data1'},
-    {id: 3, name: 'data1'},
+    { id: 1, name: 'data1' },
+    { id: 2, name: 'data1' },
+    { id: 3, name: 'data1' },
 ]
 
-data2.map((response)=>{
+data2.map((response) => {
     console.log(response);
 })

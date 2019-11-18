@@ -1,14 +1,14 @@
 const a = 'a';
-const promiseku = new promiseku((resolve,reject)=>{
-    if(a === 'a'){
+const promiseku = new promiseku((resolve, reject) => {
+    if (a === 'a') {
         resolve("Berhasil");
-    }else{
+    } else {
         reject("Gagal");
     }
 });
 
-promiseku.then(res =>{
+promiseku.then(res => {
     console.log(res);
-}).catch(err =>{
+}).catch(err => {
     console.log(err);
 });

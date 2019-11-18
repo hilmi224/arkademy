@@ -1,46 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 </head>
+
 <body>
     <div id="display"></div>
     <script>
         let angka = 100;
-        const tunggu = ()=>{
-            return new Promise((resolver,reject) =>{
+        const tunggu = () => {
+            return new Promise((resolver, reject) => {
                 document.getElementById('display').innerHTML = 'Sabar Dong......'
-                setTimeout(() =>{
+                setTimeout(() => {
                     resolver(true)
-                },5000)
+                }, 5000)
             })
         }
-        const hitung = ()=>{
-            return new promise((resolver,reject)=>{
-                setTimeout(()=>{
-                if(angka>0){
-                    angka = angka-1
-                }else{
-                    resolver(true)
-                }
-                document.getElementById('display').innerHTML=angka
-                },100)
+        const hitung = () => {
+            return new promise((resolver, reject) => {
+                setTimeout(() => {
+                    if (angka > 0) {
+                        angka = angka - 1
+                    } else {
+                        resolver(true)
+                    }
+                    document.getElementById('display').innerHTML = angka
+                }, 100)
             })
         }
-        const hitungMundur = async()=>{
+        const hitungMundur = async () => {
             const penunggu = await tunggu()
-            if(penunggu === true){
-                setInterval(()=>{
-                    angka = angka-1
-                        document.getElementById('display').innerHTML= angka
-                },1000)
+            if (penunggu === true) {
+                setInterval(() => {
+                    angka = angka - 1
+                    document.getElementById('display').innerHTML = angka
+                }, 1000)
             }
             console.log('Finish')
         }
         hitungMundur()
     </script>
 </body>
+
 </html>

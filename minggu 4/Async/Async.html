@@ -1,39 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 </head>
+
 <body>
     <div id="hasil"></div>
     <script>
-        class Output{
-            getData = async()=>{
+        class Output {
+            getData = async () => {
                 let obj = {}
-                await setTimeout(()=>{
+                await setTimeout(() => {
                     obj = {
-                        'nama':'Hilmi',
-                        'kelas':'XI-RPL 1'
+                        'nama': 'Hilmi',
+                        'kelas': 'XI-RPL 1'
                     }
-                },5000)
+                }, 5000)
                 return await obj
             }
-          setData = async (data,hasil)=>{
-              document.getElementById('hasil').innerHTML = await data 
-          }
+            setData = async (data, hasil) => {
+                document.getElementById('hasil').innerHTML = await data
+            }
         }
 
         const OH = new OutputHasil()
-        const output = async()=>{
+        const output = async () => {
             const data = await OH.getData()
-            await OH.setData(data,'hasil')
+            await OH.setData(data, 'hasil')
         }
 
         output()
 
-        
+
         //Asynchronous ES5
         //const data = new promise(function(resolve,reject){
         //       setTimeout(function(){
@@ -62,4 +64,5 @@
     //}
     </script>
 </body>
+
 </html>
