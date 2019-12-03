@@ -1,68 +1,67 @@
-/* global font-size */
-body{
-    font-family: 'Josefin Slab', serif;
-    font-size: 20px;
-}
+/** wadah dari main content **/
 
-/* wadah dari main content */
-.wrapper{
+.wrapper {
     position: absolute;
     top: 0;
     bottom: 0;
     right: 0;
     left: 0;
+    /* padding : 100px; */
 }
 
-.flex-wrapper{
+.flex-wrapper {
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100%;
     z-index: 100;
-    /* penting untuk membuat flex */
+    position: relative;
+    /** penting untuk memulai flex**/
     display: flex;
 }
 
+/** membuat  cover bacground image  **/
 
-/* membuat cover image */
-.with-image{
-    background-image: url("./background.jpg");
+.with-image {
+    background-image: url("../storage/bgk.jpg");
     background-size: cover;
     background-position: center center;
-    background-repeat: no-repeat;    
+    background-repeat: no-repeat;
 }
 
-.flex-top-name{
+/** membuat nama atas **/
+
+.flex-top-name {
     flex: 3;
     justify-content: center;
     align-items: center;
     display: flex;
 }
 
-/* membuat nama atas  */
-.top-name{
+.top-name {
     border: 5px solid white;
     padding: 5px;
 }
 
-.top-name a{
+.top-name a {
     color: white;
     text-decoration: none;
 }
 
-/* membuat content deskripsi */
-.content{
+/** membuat content deskripsi **/
+
+.content {
     font-weight: 400;
     width: 50%;
 }
 
-.content p{
+.content p {
     font-size: 2rem;
     color: white;
     text-align: center;
 }
 
-.flex-content{
+.flex-content {
     display: flex;
     flex: 3;
     justify-content: center;
@@ -70,18 +69,21 @@ body{
     flex-direction: column;
 }
 
-.flex-form{
+/** membuat form **/
+
+.flex-form {
     display: flex;
+    justify-content: center;
     flex-direction: row;
     width: 50%;
     flex: 3;
 }
 
-.flex-form .flex-parent-input-form{
-    flex: 0.6;
+.flex-form .flex-parent-inflex-wrapperput-form {
+    flex: 0.6
 }
 
-.flex-form .flex-parent-input-form .flex-input-form{
+.flex-form .flex-parent-input-form .flex-input-form {
     margin-right: 10px;
     border-radius: 5px;
     background: white;
@@ -90,7 +92,7 @@ body{
     display: flex;
 }
 
-.flex-form .flex-input-form .input-form{
+.flex-form .flex-input-form .input-form {
     border: 0;
     height: 100%;
     width: 100%;
@@ -98,14 +100,14 @@ body{
     font-size: 0.8rem;
 }
 
-.flex-form .flex-button-form{
+.flex-form .flex-button-form {
     flex: 0.4;
 }
 
-.flex-form .flex-button-form .button-form{
+.flex-form .flex-button-form .button-form {
     display: block;
     border-radius: 5px;
-    background: greenyellow;
+    background: #43a047;
     text-align: center;
     padding: 10px;
     text-decoration: none;
@@ -113,9 +115,11 @@ body{
     font-size: 0.8rem;
 }
 
-/* membuat scroll kebawah */
+/**
+    membuat text menggulir kebawah 
+**/
 
-.flex-scroll{
+.flex-scroll {
     flex-direction: column;
     align-items: center;
     color: white;
@@ -125,16 +129,18 @@ body{
     justify-content: flex-end;
 }
 
-.flex-scroll small{
+.flex-scroll small {
     font-size: 0.8rem;
 }
 
-.flex-scroll .flex-arrow-botton{
+.flex-scroll .flex-arrow-bottom {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
-.opacity{
+.opacity {
     position: absolute;
     top: 0;
     right: 0;
