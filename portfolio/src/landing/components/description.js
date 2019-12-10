@@ -5,16 +5,9 @@ class Description extends Component {
         return (
             <div class="flex-content">
                 <div class="content">
-                    <p>
-                        Materi pembelajaran
-                            <b> "LATIHAN FLEX" </b>
-                        dibuat oleh
-                            <b>
-                            XI RPL 1
-                            </b>
-                        pada minggu ke 2
-                        </p>
+                    <p>Save Your Earth</p>
                 </div>
+                    <p className="bebas">Menanam satu pohon, menghasilkan sejuta manfaat.</p>
             </div>
         )
     }

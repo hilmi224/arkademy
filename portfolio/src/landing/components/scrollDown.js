@@ -5,12 +5,10 @@ class ScrollDown extends Component {
         return (
             <div class="flex-scroll">
                 <div>
-                    <small>
-                        Menggulir kebawah
-                        </small>
+                 
                 </div>
                 <div class="flex-arrow-bottom">
-                    <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                    <i class="" aria-hidden="true"></i>
                 </div>
             </div>
         )
